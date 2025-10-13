@@ -61,40 +61,14 @@ test-jedi-website/
 - **Mobile**: 480px - 767px
 - **Small Mobile**: Below 480px
 
-## 🎯 QA Services Highlighted
-
-- Bug Detection & Prevention
-- Performance Testing
-- Security Testing
-- Test Automation
-- QA Consulting
-- Functional Testing
-
 ## 🚀 Getting Started
 
 1. Clone or download the project files
 2. Open `index.html` in a web browser
 3. For development, use a local server (e.g., Live Server extension in VS Code)
 
-## 📞 Contact Information
-
-- **Phone**: (+704) 555-0127
-- **Email**: hello@testjedi.com
-- **Company**: Test-Jedi QA Consultancy
 
 ## 🌟 Key Features
-
-### Accessibility
-- Semantic HTML structure
-- ARIA labels where needed
-- Keyboard navigation support
-- Color contrast compliance
-
-### Performance
-- Optimized CSS and JavaScript
-- Lazy loading ready
-- Minimal external dependencies
-- Fast loading times
 
 ### SEO
 - Meta tags optimization
@@ -116,12 +90,6 @@ The color scheme can be easily modified by updating the CSS custom properties:
 }
 ```
 
-### Content
-- Update company information in `index.html`
-- Modify services in the services section
-- Change contact details in the contact section
-- Update social media links in the footer
-
 ## 📋 Browser Support
 
 - Chrome (recommended)
@@ -137,14 +105,6 @@ The website is ready for deployment to any web hosting service:
 - Ensure proper file permissions
 - Update any absolute paths if necessary
 
-## 📈 Future Enhancements
-
-- Blog section integration
-- Client testimonials carousel
-- Portfolio gallery
-- Online chat widget
-- Multi-language support
-- Dark mode toggle
 
 ## 📄 License
 
@@ -152,4 +112,4 @@ This project is created for Test-Jedi QA Consultancy. All rights reserved.
 
 ---
 
-**Test-Jedi** - Elevating Software Quality with Expert QA Solutions
+**Test-Jedi** - bringing the force of software quality
