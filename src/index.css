@@ -13,20 +13,17 @@ code {
   font-style: normal;
 }
 
-.hero {
-  margin-right: 1rem;
-  margin-left: 1rem;
+.slogan {
+  font-size: 6px;
 }
 
-.navbar {
-  padding-right: 1rem;
-  padding-left: 1rem;
-  padding-top: 1rem;
+.footer {
+  font-size: 8px;
 }
 
-.services {
-  margin-right: 1rem;
-  margin-left: 1rem;
+.ant-drawer-close {
+  position: absolute;
+  right: 0px;
 }
 
 .title:hover {
@@ -43,6 +40,7 @@ code {
  0% { transform: rotate(0deg); }
  100% { transform: rotate(360deg); }
 }
+
 
 @tailwind base;
 @tailwind components;

@@ -45,9 +45,9 @@ const CTA = () => {
         },
       }}
     >
-      <div className="bg-slate-900 p-10 grid grid-cols-2 gap-10">
+      <div className="bg-slate-900 p-5 md:p-10 flex flex-col flex-col-reverse lg:grid grid-cols-2 md:gap-10">
         <div className="pb-10 text-center">
-          <h2 className="text-4xl font-bold pt-5 text-medium-brown">
+          <h2 className="text-2xl md:text-4xl my-10 font-bold text-medium-brown">
             Ready to start testing? <br /> Get in touch with us.
           </h2>
 
@@ -59,8 +59,10 @@ const CTA = () => {
             }}
           >
             <Form layout="vertical">
-              <Row gutter={16}>
-                <Col span={12} style={{ padding: "0px 8px" }}>
+              <Row
+                gutter={16}
+              >
+                <Col span={12} style={{ padding: "0px 8px" }} md={12} xs={24}>
                   <Form.Item
                     name="fullName"
                     label="Full Name"
@@ -77,7 +79,7 @@ const CTA = () => {
                     />
                   </Form.Item>
                 </Col>
-                <Col span={12} style={{ padding: "0px 8px" }}>
+                <Col span={12} style={{ padding: "0px 8px" }} md={12} xs={24}>
                   <Form.Item
                     name="email"
                     label="Email"
@@ -91,9 +93,7 @@ const CTA = () => {
                     <Input className="w-full p-2 rounded" placeholder="email" />
                   </Form.Item>
                 </Col>
-              </Row>
-              <Row gutter={16}>
-                <Col span={12} style={{ padding: "0px 8px" }}>
+                <Col span={12} style={{ padding: "0px 8px" }} md={12} xs={24}>
                   <Form.Item
                     name="companyName"
                     label="Company Name"
@@ -110,13 +110,11 @@ const CTA = () => {
                     />
                   </Form.Item>
                 </Col>
-                <Col span={12} style={{ padding: "0px 8px" }}>
+                <Col span={12} style={{ padding: "0px 8px" }} md={12} xs={24}>
                   <Form.Item name="service" label="Service Interested">
                     <Select style={{ height: 40 }} />
                   </Form.Item>
                 </Col>
-              </Row>
-              <Row gutter={16}>
                 <Col span={24} style={{ padding: "0px 8px" }}>
                   <Form.Item name="message" label="Message">
                     <TextArea
@@ -126,8 +124,9 @@ const CTA = () => {
                   </Form.Item>
                 </Col>
               </Row>
+
               <Row>
-                <button className="bg-slate-900 text-medium-brown px-6 py-3 rounded-full hover:bg-medium-brown hover:border hover:border-slate-900 hover:text-slate-900 transition duration-300 font-medium">
+                <button className="bg-slate-900 text-medium-brown px-6 py-3 rounded-full hover:bg-medium-brown hover:border hover:border-slate-900 hover:text-slate-900 transition duration-300 font-medium text-xs md:text-sm">
                   Send now
                 </button>
               </Row>
@@ -136,7 +135,7 @@ const CTA = () => {
         </div>
 
         <div className="pb-10 text-center">
-          <h2 className="text-4xl font-bold pt-5 text-medium-brown">
+          <h2 className="text-2xl md:text-4xl my-10 font-bold text-medium-brown">
             What Clients Say About <br /> Test-Jedi
           </h2>
           <Card
@@ -155,7 +154,7 @@ const CTA = () => {
               <div>
                 <h3
                   style={contentStyle}
-                  className="flex flex-col text-xl justify-center items-center px-10"
+                  className="flex flex-col text-sm md:text-xl justify-center items-center px-5 md:px-10"
                 >
                   "Working with Test-Jedi was a good one. They were very
                   particular about time management we had to make extra efforts
@@ -169,7 +168,7 @@ const CTA = () => {
               <div>
                 <h3
                   style={contentStyle}
-                  className="flex flex-col text-xl justify-center items-center px-10"
+                  className="flex flex-col text-sm md:text-xl justify-center items-center px-5 md:px-10"
                 >
                   "Their team is very responsive and flexible. They are willing
                   to work with our internal team to ensure that the project is
@@ -182,7 +181,7 @@ const CTA = () => {
               <div>
                 <h3
                   style={contentStyle}
-                  className="flex flex-col text-xl justify-center items-center px-10"
+                  className="flex flex-col text-sm md:text-xl justify-center items-center px-5 md:px-10"
                 >
                   "Test-Jedi provided us with a team of highly skilled testers
                   who were able to quickly identify and report bugs in our
@@ -196,7 +195,7 @@ const CTA = () => {
               <div>
                 <h3
                   style={contentStyle}
-                  className="flex flex-col text-xl justify-center items-center px-10"
+                  className="flex flex-col text-sm md:text-xl justify-center items-center px-5 md:px-10"
                 >
                   "The team at Test-Jedi is very knowledgeable and experienced
                   in software testing. They were able to provide us with

@@ -14,42 +14,41 @@ const Blog = () => {
         },
       }}
     >
-      <div className="min-h-screen bg-light-brown py-20">
-        <div className="text-center pb-20">
-          <h2 className="font-semibold text-lg text-dark-brown">
+      <div className="min-h-screen bg-light-brown py-10  md:p-10" id="blog">
+        <div className="text-center pb-10">
+          <h2 className="font-semibold text-sm md:text-lg text-dark-brown">
             Read Our Blog
           </h2>
 
-          <h2 className="text-4xl font-bold pt-5 text-slate-900">
+          <h4 className="text-2xl md:text-4xl font-bold pt-5 text-slate-900">
             Latest News & Articles from the Blog
-          </h2>
+          </h4>
         </div>
-        <div className=" text-center mx-10">
-          <div className="grid grid-cols-2 justify-around items-center gap-5">
-            <Card hoverable={true} className="h-full">
+        <div className=" text-center mx-5 md:mx-10">
+          <div className="flex flex-col lg:grid grid-cols-2 justify-around items-center gap-5">
+            <Card hoverable={true} className="lg:h-full">
               <div className="grid grid-rows-2 gap-5">
                 <div
                   style={{
                     backgroundImage: `url(${background})`,
-                    height: "32vh",
                     backgroundSize: "cover",
                     backgroundRepeat: "no-repeat",
                   }}
                   className="blur-sm"
                 />
                 <div className="text-start">
-                  <span className="py-2 px-5 bg-dark-brown rounded-full text-light-brown my-5">
+                  <span className="py-2 px-5 bg-dark-brown rounded-full text-light-brown md:my-5 text-xs md:text-sm">
                     Featured Post
                   </span>
-                  <Title level={3} style={{ color: "#151240", marginTop: 20 }}>
+                  <h3 className="text-lg md:text-2xl font-semibold text-slate-900 my-2 md:my-5">
                     Performance Testing Strategies for High-Traffic Applications
-                  </Title>
-                  <p className="text-left text-lg">
+                  </h3>
+                  <p className="text-left text-xs md:text-lg">
                     Discover proven strategies for performance testing that
                     ensure your applications can handle peak loads and deliver
                     optimal user experience.
                   </p>
-                  <button className="text-xl hover:underline text-dark-brown border-none mt-5">
+                  <button className="md:text-xl hover:underline text-dark-brown border-none mt-5">
                   Read more
                 </button>
                 </div>
@@ -57,49 +56,49 @@ const Blog = () => {
             </Card>
             <div className="flex flex-col gap-5">
               <Card hoverable={true} className="text-start">
-                <span className="py-2 px-5 bg-dark-brown rounded-full text-light-brown my-5">
+                  <span className="py-2 px-5 bg-dark-brown rounded-full text-light-brown md:my-5 text-xs md:text-sm">
                   Testing
                 </span>
-                <Title level={3} style={{ color: "#151240", marginTop: 20 }}>
+                  <h3 className="text-lg md:text-2xl font-semibold text-slate-900 my-2 md:my-5">
                   Security Testing Best Practices for Modern Applications
-                </Title>
-                <p>
+                </h3>
+                  <p className="text-left text-xs md:text-lg">
                   Learn essential security testing methodologies to protect your
                   applications from vulnerabilities and ensure robust
                   cybersecurity.
                 </p>
-                <button className="text-lg hover:underline text-dark-brown border-none mt-5">
+                  <button className="md:text-xl hover:underline text-dark-brown border-none mt-5">
                   Read more
                 </button>
               </Card>
               <Card hoverable={true} className="text-start">
-                <span className="py-2 px-5 bg-dark-brown rounded-full text-light-brown my-5">
+                  <span className="py-2 px-5 bg-dark-brown rounded-full text-light-brown md:my-5 text-xs md:text-sm">
                   Automation
                 </span>
-                <Title level={3} style={{ color: "#151240", marginTop: 20 }}>
+                  <h3 className="text-lg md:text-2xl font-semibold text-slate-900 my-2 md:my-5">
                   Building Robust Test Automation Frameworks
-                </Title>
-                <p>
+                </h3>
+                  <p className="text-left text-xs md:text-lg">
                   Step-by-step guide to creating maintainable and scalable test
                   automation frameworks that accelerate your testing cycles.
                 </p>
-                <button className="text-lg hover:underline text-dark-brown border-none mt-5">
+                  <button className="md:text-xl hover:underline text-dark-brown border-none mt-5">
                   Read more
                 </button>
               </Card>
               <Card hoverable={true} className="text-start">
-                <span className="py-2 px-5 bg-dark-brown rounded-full text-light-brown my-5">
+                  <span className="py-2 px-5 bg-dark-brown rounded-full text-light-brown md:my-5 text-xs md:text-sm">
                   Performance
                 </span>
-                <Title level={3} style={{ color: "#151240", marginTop: 20 }}>
+                  <h3 className="text-lg md:text-2xl font-semibold text-slate-900 my-2 md:my-5">
                   Performance Testing Strategies for High-Traffic Applications
-                </Title>
-                <p>
+                </h3>
+                  <p className="text-left text-xs md:text-lg">
                   Discover proven strategies for performance testing that ensure
                   your applications can handle peak loads and deliver optimal
                   user experience.
                 </p>
-                <button className="text-lg hover:underline text-dark-brown border-none mt-5">
+                  <button className="md:text-xl hover:underline text-dark-brown border-none mt-5">
                   Read more
                 </button>
               </Card>

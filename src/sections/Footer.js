@@ -5,51 +5,87 @@ import { Icon } from "@iconify/react";
 const Footer = () => {
   return (
     <>
-      <div className="bg-light-brown text-slate-900 text-start py-10 grid grid-cols-4 gap-10 border-t border-dark-brown">
-        <div className="flex gap-2 items-center justify-center">
+      <div className="bg-light-brown p-3 md:p-10 text-slate-900 text-start py-10 flex flex-col md:grid grid-cols-4 gap-5 md:gap-10 border-t border-dark-brown">
+        <div className="flex gap-2 items-start justify-start">
           <div className="wheel" viewBox="0 0 24 24">
             <Icon
               icon="fluent:settings-32-light"
-              width="60"
+              width="40"
               style={{ color: "#A3613D" }}
             />
           </div>
           <div>
-            <h3 className="text-dark-brown font-bold text-4xl">Test-Jedi</h3>
-            <p className="text-dark-brown font-semi text-xs">
+            <h3 className="text-dark-brown font-bold text-xl lg:text-4xl">
+              Test-Jedi
+            </h3>
+            <p className="slogan text-dark-brown font-semi lg:text-xs">
               ... Bringing The Force Of Software Quality
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 px-5">
           <h3 className="text-lg text-dark-brown font-semibold">Service</h3>
-          <p className="hover:underline cursor-pointer">
-            Full-cycle Software Testing
-          </p>
-          <p className="hover:underline cursor-pointer">Performance Testing</p>
-          <p className="hover:underline cursor-pointer">Automated Testing</p>
-          <p className="hover:underline cursor-pointer">Functional Testing</p>
-          <p className="hover:underline cursor-pointer">QA Consulting</p>
+          <ul>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              Full-cycle Software Testing
+            </li>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              Performance Testing
+            </li>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              Automated Testing
+            </li>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              Functional Testing
+            </li>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              QA Consulting
+            </li>
+          </ul>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 px-5">
           <h3 className="text-lg text-dark-brown font-semibold">Quick Links</h3>
-          <p className="hover:underline cursor-pointer">About Us</p>
-          <p className="hover:underline cursor-pointer">Services</p>
-          <p className="hover:underline cursor-pointer">Case Studies</p>
-          <p className="hover:underline cursor-pointer">Blog</p>
-          <p className="hover:underline cursor-pointer">Contact Us</p>
+          <ul>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              About Us
+            </li>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              Services
+            </li>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              Case Studies
+            </li>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              Blog
+            </li>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              Contact Us
+            </li>
+          </ul>
         </div>
-        <div className="flex flex-col gap-2">
+        <div className="flex flex-col gap-2 px-5">
           <h3 className="text-lg text-dark-brown font-semibold">Contact Us</h3>
-          <p className="hover:underline cursor-pointer">testjedi@email.com</p>
-          <p className="hover:underline cursor-pointer">+234 000 000 0000</p>
+          <ul>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              testjedi@email.com
+            </li>
+            <li className="hover:underline cursor-pointer font-semibold text-xs md:text-sm">
+              +234 000 000 0000
+            </li>
+          </ul>
         </div>
       </div>
-      <div className="p-10 bg-dark-brown text-light-brown text-lg flex justify-between">
-        <h3>Copyright © 2025 Test-Jedi All rights reserved</h3>
-        <div className="flex justify-center items-center gap-6">
-          <p className="underline cursor-pointer">Terms Of Use</p>
-          <p className="underline cursor-pointer">Privacy Policy</p>
+      <div className=" p-5 md:p-10 bg-dark-brown text-light-brown gap-2 flex flex-col justify start md:flex-row md:justify-between text-xs md:text-sm">
+        <h3 className="md:text-sm">
+          Copyright © 2025 Test-Jedi All rights reserved
+        </h3>
+        <div className="flex justify-start items-center gap-2 md:gap-6">
+          <p className="underline cursor-pointer md:text-sm">
+            Terms Of Use
+          </p>
+          <p className="underline cursor-pointer md:text-sm">
+            Privacy Policy
+          </p>
         </div>
       </div>
     </>
