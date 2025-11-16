@@ -5,7 +5,7 @@ const Footer = () => {
     <>
       <div className="p-3 md:p-10 text-slate-900 text-start py-10 flex flex-col md:grid grid-cols-4 gap-5 md:gap-10 border-t border-medium-brown">
         <div className="">
-          <img src={logo} alt="" className="cursor-pointer w-48" />
+          <img src={logo} alt="" className="cursor-pointer w-36 md:w-48" />
         </div>
         <div className="flex flex-col gap-2 px-5">
           <h3 className="text-lg text-dark-brown font-semibold">Service</h3>

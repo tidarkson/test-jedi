@@ -45,10 +45,10 @@ const CTA = () => {
         },
       }}
     >
-      <div className="relative min-h-screen p-5 md:p-10 py-10 bg-medium-brown flex flex-col flex-col-reverse lg:grid grid-cols-2 md:gap-10">
+      <div className="px-5 md:px-20 py-20 bg-medium-brown flex flex-col flex-col-reverse lg:grid grid-cols-2 md:gap-10">
         <div className="text-center">
           <h2 className="text-2xl md:text-4xl my-14 font-bold text-dark-brown">
-            {labelConfig.ready} <br /> {labelConfig.sendMessage}
+            {labelConfig.ready}
           </h2>
 
           <Card
@@ -133,7 +133,7 @@ const CTA = () => {
 
         <div className="text-center">
           <h2 className="text-2xl md:text-4xl my-14 font-bold text-dark-brown">
-            {labelConfig.whatClientsSayAbout} <br /> {labelConfig.testJedi}
+            {labelConfig.whatOurClientsSay}
           </h2>
           <Card
             style={{

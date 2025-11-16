@@ -29,7 +29,7 @@ const Navbar = () => {
     >
       <div className="navbar flex gap-10 justify-between items-center p-3 md:p-10 font-medium sticky top-0 z-30 backdrop-blur">
         <div className="flex gap-2 items-center justify-center">
-          <img src={logo} alt="" className="cursor-pointer w-48"/>
+          <img src={logo} alt="" className="cursor-pointer w-36 md:w-48" />
         </div>
         <div className="hidden lg:block ">
           <ul className="flex gap-10 justify-center items-center cursor-pointer text-lg">
@@ -70,22 +70,8 @@ const Navbar = () => {
         <Drawer
           destroyOnHidden
           title={
-            <div className="flex gap-2 items-start justify-start">
-              <div className="wheel">
-                <Icon
-                  icon="fluent:settings-32-light"
-                  width="40"
-                  style={{ color: "#A3613D" }}
-                />
-              </div>
-              <div>
-                <h3 className="text-dark-brown font-bold text-xl lg:text-4xl">
-                  Test-Jedi
-                </h3>
-                <p className="slogan text-dark-brown font-semi lg:text-xs">
-                  ... Bringing The Force Of Software Quality
-                </p>
-              </div>
+            <div className="">
+              <img src={logo} alt="" className="cursor-pointer w-36 md:w-48" />
             </div>
           }
           placement="top"
@@ -96,7 +82,7 @@ const Navbar = () => {
               icon="codicon:eye-closed"
               width="40"
               style={{ color: "#A3613D" }}
-              className="absolute bottom-10"
+              className="absolute right-10"
             />
           }
           size="small"

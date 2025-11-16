@@ -38,7 +38,6 @@ const Mission = () => {
                 icon="la:globe-asia"
                 width="40"
                 style={{ color: "#A3613D" }}
-                className="wheel"
               />
             </div>
             <Title level={4} style={{ color: "#151240", paddingTop: 10 }}>
@@ -52,7 +51,6 @@ const Mission = () => {
                 icon="hugeicons:atom-01"
                 width="40"
                 style={{ color: "#A3613D" }}
-                className="animate-pulse"
               />
             </div>
             <Title level={4} style={{ color: "#151240", paddingTop: 10 }}>
@@ -66,7 +64,6 @@ const Mission = () => {
                 icon="bi:transparency"
                 width="40"
                 style={{ color: "#A3613D" }}
-                // className="animate-pulse"
               />
             </div>
             <Title level={4} style={{ color: "#151240", paddingTop: 10 }}>
@@ -80,7 +77,6 @@ const Mission = () => {
                 icon="carbon:security-services"
                 width="40"
                 style={{ color: "#A3613D" }}
-                // className="animate-bounce"
               />
             </div>
             <Title level={4} style={{ color: "#151240", paddingTop: 10 }}>
