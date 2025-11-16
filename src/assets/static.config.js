@@ -1,0 +1,66 @@
+/*!*******************************************************************************!
+  !*** LABEL CONFIG                                                      ***!
+  \*******************************************************************************/
+export const labelConfig = {
+  contactNow: "Contact Now",
+  Blog: "Blog",
+  Mission: "Mission",
+  Home: "Home",
+  Services: "Services",
+  QUALITY: "QUALITY",
+  ASSURANCE: "ASSURANCE",
+  EXCELLENCE: "EXCELLENCE",
+  heroText:
+    "Expert QA testing solutions to ensure your software meets the highest standards. We deliver comprehensive testing strategies that accelerate your product quality.",
+  ourServices: "Our Services",
+  fullCycle: "Full-cycle Software Testing",
+  fullCycleText:
+    "We deliver efficient, full-cycle QA and software testing services, ensuring you launch software without a glitch faster.",
+  automatedTesting: "Automated Testing",
+  automatedTestingText:
+    "Accelerate quality code delivery through powerful test automation. Precisely engineered scripts catch issues across browsers, performance, and regression testing at unmatched speed.",
+  performanceTesting: "Performance Testing",
+  performanceTestingText:
+    "We rigorously audit speed and stability, to see the gaps and recommend optimizations, so your software’s responsiveness excites customers every click.",
+  functionalTesting: "Functional Testing",
+  functionalTestingText:
+    "Rigorously validating every input triggers the intended output means no confusing misfires for customers. Our software testing services safeguard intended utility for software that meets user expectations.",
+  exploreAllServices: "Explore All Services",
+  chooseUs: "Why Choose Us?",
+  mission: "See What Makes us Unique",
+  proven: "Proven in the real world",
+  provenText:
+    "  With over a decade of experience testing everything from global platforms to fast-moving product teams, we know how to balance speed, structure, and depth without slowing you down.",
+  flexible: "Flexible as you grow",
+  flexibleText:
+    "Dedicated teams when you need consistency. Crowdsourced bursts when you need speed. Outsourced or nearshore options when you want more lift. Our model adapts as your needs evolve.",
+  transparency: "Transparency at every step",
+  transparencyText:
+    "Track test execution, review issues, audit performance, and see who’s doing the work. Everything’s documented, accessible, and built to keep you in the loop",
+  security: "Security you can count on",
+  securityText:
+    "We’re certified and built for enterprise scale. From data handling to tester management, we bring structure and security to every engagement.",
+  ready: "Ready to Propose a Project?",
+  sendMessage: "Send us a Message",
+  whatClientsSayAbout: "What Clients Say About",
+  testJedi: "Test-Jedi",
+  michealGreyText:
+    "Working with Test-Jedi was a good one. They were very particular about time management we had to make extra efforts to keep up. We have and will still refer companies to them",
+  michealGrey: "Michael Grey, Product Manager",
+  tijani: "Tijani R, CTO",
+  tijaniText:
+    "Their team is very responsive and flexible. They are willing to work with our internal team to ensure that the project is completed on time and within budget.",
+  gwen: "Gwendoline U, QA Lead",
+  gwenText:
+    "Test-Jedi provided us with a team of highly skilled testers who were able to quickly identify and report bugs in our software. Their attention to detail and thoroughness was impressive.",
+  ting: "Tingwutobong O, Head of Dev",
+  tingText:
+    "The team at Test-Jedi is very knowledgeable and experiencedin software testing. They were able to provide us withvaluable insights and recommendations on how to improve ourtesting processes.",
+  howCanWeHelpYou: "How can we help you?",
+  serviceInterested: "Service Interested",
+  message: "Message",
+  companyName: "Company Name",
+  pleaseEnterYourEmail: "Please enter your Email",
+  email: "Email",
+  fullName: "Full Name",
+};

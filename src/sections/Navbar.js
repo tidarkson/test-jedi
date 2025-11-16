@@ -1,8 +1,10 @@
 import { React, useState } from "react";
 import { Icon } from "@iconify/react";
 import { ConfigProvider, Drawer } from "antd";
-import { Link } from "react-router-dom";
-import { HashLink } from 'react-router-hash-link'
+import CustomButton from "../components/CustomButton";
+import { HashLink } from "react-router-hash-link";
+import { labelConfig } from "../assets/static.config";
+import logo from "../assets/logo.svg";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -11,7 +13,6 @@ const Navbar = () => {
   const showLoading = () => {
     setOpen(true);
     setLoading(true);
-    // Simple loading mock. You should add cleanup logic in real world.
     setTimeout(() => {
       setLoading(false);
     }, 2000);
@@ -21,65 +22,48 @@ const Navbar = () => {
     <ConfigProvider
       theme={{
         token: {
-          // Seed Token
           colorPrimary: "#1E293B",
           fontFamily: "'Sora', sans-serif",
         },
       }}
     >
-      <div className="navbar flex gap-10 justify-between items-center p-3 md:p-10 font-medium text-light-brown sticky top-0 bg-dark-brown z-50 backdrop-blur">
+      <div className="navbar flex gap-10 justify-between items-center p-3 md:p-10 font-medium sticky top-0 z-30 backdrop-blur">
         <div className="flex gap-2 items-center justify-center">
-          <div className="wheel" viewBox="0 0 24 24">
-            <Icon
-              icon="fluent:settings-32-light"
-              width="40"
-              style={{ color: "#fdf9d2" }}
-            />
-          </div>
-          <div>
-            <h3 className="text-light-brown font-bold text-xl lg:text-4xl">
-              Test-Jedi
-            </h3>
-            <p className="slogan text-light-brown lg:text-xs">
-              ... Bringing The Force Of Software Quality
-            </p>
-          </div>
+          <img src={logo} alt="" className="cursor-pointer w-48"/>
         </div>
         <div className="hidden lg:block ">
           <ul className="flex gap-10 justify-center items-center cursor-pointer text-lg">
             <li className="hover:underline">
               <HashLink to="/" smooth>
-                Home
+                {labelConfig.Home}
               </HashLink>
             </li>
             <li className="hover:underline">
               <HashLink to="/#services" smooth>
-                Services
+                {labelConfig.Services}
               </HashLink>
             </li>
             <li className="hover:underline">
               <HashLink to="/#mission" smooth>
-                Mission
+                {labelConfig.Mission}
               </HashLink>
             </li>
             <li className="hover:underline">
               <HashLink to="/#blog" smooth>
-                Blog
+                {labelConfig.Blog}
               </HashLink>
             </li>
           </ul>
         </div>
         <div className="hidden lg:block">
-          <button className="bg-light-brown p-3 rounded-full text-dark-brown hover:bg-medium-brown md:font-medium transition duration-300 text-xs md:text-sm">
-            Contact Now
-          </button>
+          <CustomButton content={labelConfig.contactNow} />
         </div>
         <div className="lg:hidden ">
-          <button onClick={showLoading} className="nav-btn mr-2">
+          <button onClick={showLoading} className="mr-2">
             <Icon
               icon="fluent:navigation-20-regular"
               width="30"
-              style={{ color: "#fdf9d2" }}
+              style={{ color: "#A3613D" }}
             />
           </button>
         </div>
@@ -110,14 +94,14 @@ const Navbar = () => {
           closeIcon={
             <Icon
               icon="codicon:eye-closed"
-              width="30"
+              width="40"
               style={{ color: "#A3613D" }}
-              className="absolute right-5"
+              className="absolute bottom-10"
             />
           }
           size="small"
           style={{
-            backgroundColor: "#D9C5B2",
+            backgroundColor: "#ffffff",
             height: "50vh",
           }}
         >
@@ -128,7 +112,7 @@ const Navbar = () => {
                 className="hover:underline font-semibold text-slate-900"
               >
                 <HashLink to="/" smooth>
-                  Home
+                  {labelConfig.Home}
                 </HashLink>
               </li>
               <li
@@ -136,7 +120,7 @@ const Navbar = () => {
                 className="hover:underline font-semibold text-slate-900"
               >
                 <HashLink to="/#services" smooth>
-                  Services
+                  {labelConfig.Services}
                 </HashLink>
               </li>
               <li
@@ -144,7 +128,7 @@ const Navbar = () => {
                 className="hover:underline font-semibold text-slate-900"
               >
                 <HashLink to="/#mission" smooth>
-                  Mission
+                  {labelConfig.Mission}
                 </HashLink>
               </li>
               <li
@@ -152,7 +136,7 @@ const Navbar = () => {
                 className="hover:underline font-semibold text-slate-900"
               >
                 <HashLink to="/#blog" smooth>
-                  Blog
+                  {labelConfig.Blog}
                 </HashLink>
               </li>
             </ul>
