@@ -82,7 +82,7 @@ const Navbar = () => {
               icon="codicon:eye-closed"
               width="40"
               style={{ color: "#A3613D" }}
-              className="absolute right-10"
+              className="absolute right-5"
             />
           }
           size="small"

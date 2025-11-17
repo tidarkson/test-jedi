@@ -38,6 +38,7 @@ const Mission = () => {
                 icon="la:globe-asia"
                 width="40"
                 style={{ color: "#A3613D" }}
+                className="wheel"
               />
             </div>
             <Title level={4} style={{ color: "#151240", paddingTop: 10 }}>
@@ -74,7 +75,7 @@ const Mission = () => {
           <Card hoverable={true}>
             <div>
               <Icon
-                icon="carbon:security-services"
+                icon="line-md:security"
                 width="40"
                 style={{ color: "#A3613D" }}
               />

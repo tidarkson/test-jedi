@@ -32,7 +32,7 @@ p {
 .title:hover {
   text-decoration: underline;
   cursor: pointer;
-  color: #a3613d;
+  /* color: #a3613d; */
 }
 
 .wheel {

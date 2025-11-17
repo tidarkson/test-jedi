@@ -11,6 +11,7 @@ import {
 import TextArea from "antd/es/input/TextArea";
 import { labelConfig } from "../assets/static.config";
 import CustomButton from "../components/CustomButton";
+import { Icon } from "@iconify/react";
 
 const contentStyle = {
   height: "350px",
@@ -47,9 +48,16 @@ const CTA = () => {
     >
       <div className="px-5 md:px-20 py-20 bg-medium-brown flex flex-col flex-col-reverse lg:grid grid-cols-2 md:gap-10">
         <div className="text-center">
-          <h2 className="text-2xl md:text-4xl my-14 font-bold text-dark-brown">
-            {labelConfig.ready}
-          </h2>
+          <div className="flex justify-center gap-2 items-center">
+            <h2 className="text-2xl md:text-4xl my-14 font-bold text-slate-900">
+              {labelConfig.ready}
+            </h2>
+            <Icon
+              icon="lets-icons:message-duotone"
+              width="40"
+              style={{ color: "#A3613D" }}
+            />
+          </div>
 
           <Card
             style={{
@@ -86,7 +94,10 @@ const CTA = () => {
                       },
                     ]}
                   >
-                    <Input className="w-full p-2 rounded" placeholder={labelConfig.email} />
+                    <Input
+                      className="w-full p-2 rounded"
+                      placeholder={labelConfig.email}
+                    />
                   </Form.Item>
                 </Col>
                 <Col span={12} style={{ padding: "0px 8px" }} md={12} xs={24}>
@@ -132,9 +143,17 @@ const CTA = () => {
         </div>
 
         <div className="text-center">
-          <h2 className="text-2xl md:text-4xl my-14 font-bold text-dark-brown">
-            {labelConfig.whatOurClientsSay}
-          </h2>
+          <div className="flex justify-center gap-2 items-center">
+            <Icon
+              icon="line-md:phone-call-twotone-loop"
+              width="36"
+              style={{ color: "#A3613D" }}
+            />
+            <h2 className="text-2xl md:text-4xl my-14 font-bold text-slate-900">
+              {labelConfig.whatOurClientsSay}
+            </h2>
+          </div>
+
           <Card
             style={{
               marginTop: 20,

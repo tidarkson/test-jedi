@@ -40,9 +40,9 @@ export const labelConfig = {
   security: "Security you can count on",
   securityText:
     "We’re certified and built for enterprise scale. From data handling to tester management, we bring structure and security to every engagement.",
-  ready: "Ready to Propose a Project?",
+  ready: "Propose a Project",
   sendMessage: "Send us a Message",
-  whatOurClientsSay: "What Our Clients Say",
+  whatOurClientsSay: "What Do Our Clients Say?",
   testJedi: "Test-Jedi",
   michealGreyText:
     "Working with Test-Jedi was a good one. They were very particular about time management we had to make extra efforts to keep up. We have and will still refer companies to them",
