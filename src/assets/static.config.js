@@ -27,7 +27,7 @@ export const labelConfig = {
     "Rigorously validating every input triggers the intended output means no confusing misfires for customers. Our software testing services safeguard intended utility for software that meets user expectations.",
   exploreAllServices: "Explore All Services",
   chooseUs: "Why Choose Us?",
-  mission: "See What Makes us Unique",
+  mission: "See What Makes Us Unique",
   proven: "Proven in the real world",
   provenText:
     "  With over a decade of experience testing everything from global platforms to fast-moving product teams, we know how to balance speed, structure, and depth without slowing you down.",
@@ -41,7 +41,7 @@ export const labelConfig = {
   securityText:
     "We’re certified and built for enterprise scale. From data handling to tester management, we bring structure and security to every engagement.",
   ready: "Propose a Project",
-  sendMessage: "Send us a Message",
+  sendMessage: "Send Us a Message",
   startTesting: "Start Testing With Us",
   whatOurClientsSay: "What Do Our Clients Say?",
   testJedi: "Test-Jedi",

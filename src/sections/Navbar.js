@@ -80,7 +80,7 @@ const Navbar = () => {
           closeIcon={
             <Icon
               icon="codicon:eye-closed"
-              width="40"
+              width="36"
               style={{ color: "#A3613D" }}
               className="absolute right-5"
             />

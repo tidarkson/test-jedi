@@ -18,6 +18,14 @@ const contentStyle = {
   color: "#151240",
 };
 
+const servicesOptions = [
+  { label: "Full-cycle Software Testing", value: 1 },
+  { label: "Performance Testing", value: 2 },
+  { label: "Automated Testing", value: 3 },
+  { label: "Functional Testing", value: 4 },
+  { label: "QA Consulting", value: 5 },
+];
+
 const CTA = () => {
   return (
     <ConfigProvider
@@ -122,7 +130,7 @@ const CTA = () => {
                     name="service"
                     label={labelConfig.serviceInterested}
                   >
-                    <Select style={{ height: 40 }} />
+                    <Select style={{ height: 40 }} options={servicesOptions} />
                   </Form.Item>
                 </Col>
                 <Col span={24} style={{ padding: "0px 8px" }}>
