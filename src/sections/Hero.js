@@ -1,13 +1,19 @@
-import React from "react";
+import { useEffect } from "react";
 import heroImage from "../assets/hero-img.png";
-import { Icon } from "@iconify/react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { labelConfig } from "../assets/static.config";
+import CustomButton from "../components/CustomButton";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
   return (
     <div className="relative flex flex-col lg:grid grid-cols-2 min-h-screen justify-center items-center">
       <div className="flex flex-col justify-center gap-5 p-6 md:p-10 lg:pl-20">
-        <div className="text-4xl md:text-5xl xl:text-8xl font-bold tracking-wider">
+        <div className="text-4xl md:text-5xl xl:text-8xl font-bold tracking-wider" data-aos="fade-left">
           <span className="text-dark-brown">{labelConfig.QUALITY}</span> <br />
           <span className="text-dark-brown">{labelConfig.ASSURANCE}</span>{" "}
           <br />
@@ -16,9 +22,17 @@ const Hero = () => {
         <p className="text-slate-900 text-xs md:text-lg">
           {labelConfig.heroText}
         </p>
+        <div>
+          <CustomButton content={labelConfig.startTesting} />
+        </div>
       </div>
       <div className="flex justify-center items-center">
-        <img src={heroImage} alt="" className="md:w-full lg:w-3/4 md:rounded-3xl" />
+        <img
+          src={heroImage}
+          alt=""
+          className="md:w-full lg:w-3/4 md:rounded-3xl"
+          data-aos="fade-right"
+        />
       </div>
     </div>
   );

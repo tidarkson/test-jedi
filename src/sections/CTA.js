@@ -34,14 +34,14 @@ const CTA = () => {
 
           Input: {
             colorBgContainer: "#ffffff",
-            activeBorderColor: "#ffffff",
-            hoverBorderColor: "#ffffff",
+            activeBorderColor: "#D9C5B2",
+            hoverBorderColor: "#D9C5B2",
           },
 
           Select: {
             colorBgContainer: "#ffffff",
-            activeBorderColor: "#ffffff",
-            hoverBorderColor: "#ffffff",
+            activeBorderColor: "#D9C5B2",
+            hoverBorderColor: "#D9C5B2",
           },
         },
       }}

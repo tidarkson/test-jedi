@@ -42,6 +42,7 @@ export const labelConfig = {
     "We’re certified and built for enterprise scale. From data handling to tester management, we bring structure and security to every engagement.",
   ready: "Propose a Project",
   sendMessage: "Send us a Message",
+  startTesting: "Start Testing With Us",
   whatOurClientsSay: "What Do Our Clients Say?",
   testJedi: "Test-Jedi",
   michealGreyText:

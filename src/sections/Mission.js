@@ -78,6 +78,7 @@ const Mission = () => {
                 icon="line-md:security"
                 width="40"
                 style={{ color: "#A3613D" }}
+                // className="animate-pulse"
               />
             </div>
             <Title level={4} style={{ color: "#151240", paddingTop: 10 }}>
