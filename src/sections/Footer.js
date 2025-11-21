@@ -1,4 +1,5 @@
 import logo from "../assets/logo.svg";
+import { labelConfig } from "../assets/static.config";
 
 const Footer = () => {
   return (
@@ -8,42 +9,46 @@ const Footer = () => {
           <img src={logo} alt="" className="cursor-pointer w-36 md:w-48" />
         </div>
         <div className="flex flex-col gap-2 px-5">
-          <h3 className="text-lg text-dark-brown font-semibold">Service</h3>
+          <h3 className="text-lg text-dark-brown font-semibold">
+            {labelConfig.Services}
+          </h3>
           <ul>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              Full-cycle Software Testing
+              {labelConfig.fullCycle}
             </li>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              Performance Testing
+              {labelConfig.performanceTesting}
             </li>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              Automated Testing
+              {labelConfig.automatedTesting}
             </li>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              Functional Testing
+              {labelConfig.functionalTesting}
             </li>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              QA Consulting
+              {labelConfig.consulting}
             </li>
           </ul>
         </div>
         <div className="flex flex-col gap-2 px-5">
-          <h3 className="text-lg text-dark-brown font-semibold">Quick Links</h3>
+          <h3 className="text-lg text-dark-brown font-semibold">
+            {labelConfig.quickLinks}
+          </h3>
           <ul>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              About Us
+              {labelConfig.aboutUs}
             </li>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              Services
+              {labelConfig.Services}
             </li>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              Case Studies
+              {labelConfig.caseStudies}
             </li>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              Blog
+              {labelConfig.blog}
             </li>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              Contact Us
+              {labelConfig.contactUs}
             </li>
           </ul>
         </div>
@@ -51,21 +56,23 @@ const Footer = () => {
           <h3 className="text-lg text-dark-brown font-semibold">Contact Us</h3>
           <ul>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              testjedi@email.com
+              {labelConfig.testJediEmail}
             </li>
             <li className="hover:underline cursor-pointer text-xs md:text-sm">
-              +234 000 000 0000
+              {labelConfig.testJediPhone}
             </li>
           </ul>
         </div>
       </div>
       <div className=" p-5 md:p-10 gap-2 flex flex-col justify start md:flex-row md:justify-between text-xs md:text-sm">
-        <h3 className="md:text-sm">
-          Copyright © 2025 Test-Jedi All rights reserved
-        </h3>
+        <h3 className="md:text-sm">{labelConfig.copyright}</h3>
         <div className="flex justify-start items-center gap-2 md:gap-6">
-          <p className="underline cursor-pointer md:text-sm">Terms Of Use</p>
-          <p className="underline cursor-pointer md:text-sm">Privacy Policy</p>
+          <p className="underline cursor-pointer md:text-sm">
+            {labelConfig.termsOfUse}
+          </p>
+          <p className="underline cursor-pointer md:text-sm">
+            {labelConfig.privacyPolicy}
+          </p>
         </div>
       </div>
     </>

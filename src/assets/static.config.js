@@ -64,4 +64,17 @@ export const labelConfig = {
   pleaseEnterYourEmail: "Please enter your Email",
   email: "Email",
   fullName: "Full Name",
+  consulting: "QA Consulting",
+  aboutUs: "About Us",
+  quickLinks: "Quick Links",
+  caseStudies: "Case Studies",
+  blog : "Blog",
+  contactUs: "Contact Us",
+  testJediEmail: "testjedi@email.com",
+  testJediPhone: "+234 000 000 0000",
+  copyright: "Copyright © 2025 Test-Jedi All rights reserved",
+  termsOfUse: "Terms Of Use",
+  privacyPolicy: "Privacy Policy",
+  readOurBlog: "Read Our Blog",
+  
 };

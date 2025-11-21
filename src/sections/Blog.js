@@ -1,6 +1,6 @@
 import { Card, ConfigProvider, Divider } from "antd";
 import { Icon } from "@iconify/react";
-import Title from "antd/es/typography/Title";
+import { labelConfig } from "../assets/static.config";
 import background from "../assets/hero-img.png";
 
 const Blog = () => {
@@ -17,7 +17,7 @@ const Blog = () => {
       <div className="min-h-screen py-20 md:px-10" id="blog">
         <div className="text-center pb-10 px-5 md:px-10">
           <h2 className="font-semibold text-sm md:text-lg text-slate-900">
-            Read Our Blog
+            {labelConfig.readOurBlog}
           </h2>
 
           <h4 className="text-2xl md:text-4xl font-bold pt-5 text-slate-900">

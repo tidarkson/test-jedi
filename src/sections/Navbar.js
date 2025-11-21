@@ -56,7 +56,9 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="hidden lg:block">
-          <CustomButton content={labelConfig.contactNow} />
+          <HashLink to="#cta" smooth>
+            <CustomButton content={labelConfig.contactNow} />{" "}
+          </HashLink>
         </div>
         <div className="lg:hidden ">
           <button onClick={showLoading} className="mr-2">

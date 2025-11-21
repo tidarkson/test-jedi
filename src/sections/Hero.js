@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { labelConfig } from "../assets/static.config";
 import CustomButton from "../components/CustomButton";
+import { HashLink } from "react-router-hash-link";
 
 const Hero = () => {
   useEffect(() => {
@@ -23,7 +24,9 @@ const Hero = () => {
           {labelConfig.heroText}
         </p>
         <div>
+          <HashLink to="#cta" smooth>
           <CustomButton content={labelConfig.startTesting} />
+          </HashLink>
         </div>
       </div>
       <div className="flex justify-center items-center">
