@@ -22,7 +22,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative flex flex-col lg:grid grid-cols-2 justify-center items-center my-6">
+    <div className="relative flex flex-col lg:grid grid-cols-2 justify-center items-center my-10">
       <div className="flex flex-col justify-center items-center lg:items-start gap-5 p-6 md:p-10 lg:pl-20">
         <div
           className="text-4xl md:text-5xl xl:text-8xl font-bold tracking-wider"
