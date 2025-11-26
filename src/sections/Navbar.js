@@ -1,21 +1,21 @@
-import { React, useState } from "react";
+import { useState } from "react";
 import { Icon } from "@iconify/react";
 import { ConfigProvider, Drawer } from "antd";
 import CustomButton from "../components/CustomButton";
-import { HashLink } from "react-router-hash-link";
 import { labelConfig } from "../assets/static.config";
 import logo from "../assets/logo.svg";
 
-const Navbar = () => {
+export default function Navbar() {
   const [open, setOpen] = useState(false);
-  const [loading, setLoading] = useState(true);
 
-  const showLoading = () => {
-    setOpen(true);
-    setLoading(true);
-    setTimeout(() => {
-      setLoading(false);
-    }, 2000);
+  const scrollToId = (id) => {
+    if (!id) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    else window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
   return (
@@ -29,110 +29,90 @@ const Navbar = () => {
     >
       <div className="navbar flex gap-10 justify-between items-center p-3 md:p-10 font-medium sticky top-0 z-30 backdrop-blur">
         <div className="flex gap-2 items-center justify-center">
-          <img src={logo} alt="" className="cursor-pointer w-36 md:w-48" />
+          <img
+            src={logo}
+            alt="logo"
+            className="cursor-pointer w-36 md:w-48"
+            onClick={() => scrollToId(null)}
+            role="button"
+          />
         </div>
-        <div className="hidden lg:block ">
-          <ul className="flex gap-10 justify-center items-center cursor-pointer text-lg">
+
+        <div className="hidden lg:block">
+          <ul className="flex gap-10 justify-center items-center text-lg">
             <li className="hover:underline">
-              <HashLink to="/" smooth>
+              <button type="button" onClick={() => scrollToId(null)} className="focus:outline-none">
                 {labelConfig.Home}
-              </HashLink>
+              </button>
             </li>
             <li className="hover:underline">
-              <HashLink to="/#services" smooth>
+              <button type="button" onClick={() => scrollToId("services")} className="focus:outline-none">
                 {labelConfig.Services}
-              </HashLink>
+              </button>
             </li>
             <li className="hover:underline">
-              <HashLink to="/#mission" smooth>
+              <button type="button" onClick={() => scrollToId("mission")} className="focus:outline-none">
                 {labelConfig.Mission}
-              </HashLink>
+              </button>
             </li>
             <li className="hover:underline">
-              <HashLink to="/#blog" smooth>
+              <button type="button" onClick={() => scrollToId("blog")} className="focus:outline-none">
                 {labelConfig.Blog}
-              </HashLink>
+              </button>
             </li>
           </ul>
         </div>
+
         <div className="hidden lg:block">
-          <HashLink to="#cta" smooth>
-            <CustomButton content={labelConfig.contactNow} />{" "}
-          </HashLink>
-        </div>
-        <div className="lg:hidden ">
-          <button onClick={showLoading} className="mr-2">
-            <Icon
-              icon="fluent:navigation-20-regular"
-              width="30"
-              style={{ color: "#A3613D" }}
-            />
+          <button type="button" onClick={() => scrollToId("contact")}>
+            <CustomButton content={labelConfig.contactNow} />
           </button>
         </div>
+
+        <div className="lg:hidden">
+          <button onClick={() => setOpen(true)} className="mr-2">
+            <Icon icon="fluent:navigation-20-regular" width="30" style={{ color: "#A3613D" }} />
+          </button>
+        </div>
+
         <Drawer
           destroyOnHidden
           title={
-            <div className="">
-              <img src={logo} alt="" className="cursor-pointer w-36 md:w-48" />
+            <div>
+              <img src={logo} alt="logo" className="cursor-pointer w-36 md:w-48" onClick={() => { scrollToId(null); setOpen(false); }} />
             </div>
           }
           placement="top"
           open={open}
           onClose={() => setOpen(false)}
-          closeIcon={
-            <Icon
-              icon="codicon:eye-closed"
-              width="36"
-              style={{ color: "#A3613D" }}
-              className="absolute right-5"
-            />
-          }
+          closeIcon={<Icon icon="codicon:eye-closed" width="36" style={{ color: "#A3613D" }} className="absolute right-5" />}
           size="small"
-          style={{
-            backgroundColor: "#ffffff",
-            height: "50vh",
-          }}
+          style={{ backgroundColor: "#ffffff", height: "50vh" }}
         >
-          <div className="">
-            <ul className="flex flex-col gap-5 justify-start items-start cursor-pointer">
-              <li
-                onClick={() => setOpen(false)}
-                className="hover:underline font-semibold text-slate-900"
-              >
-                <HashLink to="/" smooth>
-                  {labelConfig.Home}
-                </HashLink>
-              </li>
-              <li
-                onClick={() => setOpen(false)}
-                className="hover:underline font-semibold text-slate-900"
-              >
-                <HashLink to="/#services" smooth>
-                  {labelConfig.Services}
-                </HashLink>
-              </li>
-              <li
-                onClick={() => setOpen(false)}
-                className="hover:underline font-semibold text-slate-900"
-              >
-                <HashLink to="/#mission" smooth>
-                  {labelConfig.Mission}
-                </HashLink>
-              </li>
-              <li
-                onClick={() => setOpen(false)}
-                className="hover:underline font-semibold text-slate-900"
-              >
-                <HashLink to="/#blog" smooth>
-                  {labelConfig.Blog}
-                </HashLink>
-              </li>
-            </ul>
-          </div>
+          <ul className="flex flex-col gap-5 justify-start items-start">
+            <li className="hover:underline font-semibold text-slate-900">
+              <button type="button" onClick={() => { scrollToId(null); setOpen(false); }} className="focus:outline-none">
+                {labelConfig.Home}
+              </button>
+            </li>
+            <li className="hover:underline font-semibold text-slate-900">
+              <button type="button" onClick={() => { scrollToId("services"); setOpen(false); }} className="focus:outline-none">
+                {labelConfig.Services}
+              </button>
+            </li>
+            <li className="hover:underline font-semibold text-slate-900">
+              <button type="button" onClick={() => { scrollToId("mission"); setOpen(false); }} className="focus:outline-none">
+                {labelConfig.Mission}
+              </button>
+            </li>
+            <li className="hover:underline font-semibold text-slate-900">
+              <button type="button" onClick={() => { scrollToId("blog"); setOpen(false); }} className="focus:outline-none">
+                {labelConfig.Blog}
+              </button>
+            </li>
+          </ul>
         </Drawer>
       </div>
     </ConfigProvider>
   );
-};
-
-export default Navbar;
+}

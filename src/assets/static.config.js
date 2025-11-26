@@ -76,5 +76,7 @@ export const labelConfig = {
   termsOfUse: "Terms Of Use",
   privacyPolicy: "Privacy Policy",
   readOurBlog: "Read Our Blog",
-  
+  ourTestingStory: "Our QA Testing Solutions Story",
+  excellence: "Excellence",
+  empowering: "Empowering",
 };

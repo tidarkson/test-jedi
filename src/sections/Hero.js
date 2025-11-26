@@ -11,10 +11,23 @@ const Hero = () => {
     AOS.init({ duration: 3000 });
   }, []);
 
+  const scrollToId = (id) => {
+    if (!id) {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+    else window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
-    <div className="relative flex flex-col lg:grid grid-cols-2 min-h-screen justify-center items-center">
-      <div className="flex flex-col justify-center gap-5 p-6 md:p-10 lg:pl-20">
-        <div className="text-4xl md:text-5xl xl:text-8xl font-bold tracking-wider" data-aos="fade-left">
+    <div className="relative flex flex-col lg:grid grid-cols-2 justify-center items-center my-6">
+      <div className="flex flex-col justify-center items-center lg:items-start gap-5 p-6 md:p-10 lg:pl-20">
+        <div
+          className="text-4xl md:text-5xl xl:text-8xl font-bold tracking-wider"
+          data-aos="fade-left"
+        >
           <span className="text-dark-brown">{labelConfig.QUALITY}</span> <br />
           <span className="text-dark-brown">{labelConfig.ASSURANCE}</span>{" "}
           <br />
@@ -24,9 +37,9 @@ const Hero = () => {
           {labelConfig.heroText}
         </p>
         <div>
-          <HashLink to="#cta" smooth>
-          <CustomButton content={labelConfig.startTesting} />
-          </HashLink>
+          <button type="button" onClick={() => scrollToId("contact")}>
+            <CustomButton content={labelConfig.startTesting} />
+          </button>
         </div>
       </div>
       <div className="flex justify-center items-center">

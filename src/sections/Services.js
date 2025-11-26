@@ -29,8 +29,9 @@ const Services = () => {
             {labelConfig.ourServices}
           </h2>
           <h4 className="text-2xl md:text-4xl font-bold pt-5 text-slate-900">
-            Empowering <span className="text-dark-brown">Excellence</span>: Our
-            QA Testing Solutions Story
+            {labelConfig.empowering}{" "}
+            <span className="text-dark-brown">{labelConfig.excellence}</span>:{" "}
+            {labelConfig.ourTestingStory}
           </h4>
         </div>
         <div className="md:px-20">
