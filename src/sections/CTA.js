@@ -54,7 +54,7 @@ const CTA = () => {
         },
       }}
     >
-      <div className="px-5 md:px-20 py-20 bg-medium-brown flex flex-col flex-col-reverse lg:grid grid-cols-2 md:gap-10" id="contact">
+      <div className="px-5 md:px-20 py-20 bg-medium-brown flex flex-col lg:grid grid-cols-2 md:gap-10" id="contact">
         <div className="text-center">
           <div className="flex justify-center gap-2 items-center">
             <h2 className="text-2xl md:text-4xl my-14 font-bold text-slate-900">

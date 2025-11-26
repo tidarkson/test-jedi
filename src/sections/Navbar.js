@@ -85,7 +85,7 @@ export default function Navbar() {
           placement="top"
           open={open}
           onClose={() => setOpen(false)}
-          closeIcon={<Icon icon="codicon:eye-closed" width="36" style={{ color: "#A3613D" }} className="absolute right-5" />}
+          closeIcon={<Icon icon="ix:cancel" width="36" style={{ color: "#A3613D" }} className="absolute right-10" />}
           size="small"
           style={{ backgroundColor: "#ffffff", height: "50vh" }}
         >
